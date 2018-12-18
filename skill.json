@@ -1,0 +1,40 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "Misreading Chat",
+          "examplePhrases": [
+            "アレクサ、ミスリーディング開いて"
+          ],
+          "name": "skill-misreading-podcast",
+          "description": "Sample Full Description",
+          "smallIconUri": "https://s3-ap-northeast-1.amazonaws.com/snaka-public/alexa-icons/Sample_108.png",
+          "largeIconUri": "https://s3-ap-northeast-1.amazonaws.com/snaka-public/alexa-icons/Sample_512.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "PODCAST",
+      "distributionCountries": []
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:ap-northeast-1:105394972992:function:skill-misreading-podcast-dev-main"
+        },
+        "interfaces": [
+          { "type": "AUDIO_PLAYER" }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

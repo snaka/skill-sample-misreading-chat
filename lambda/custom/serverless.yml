@@ -1,0 +1,19 @@
+service: skill-misreading-podcast
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: nodejs8.10
+  memorySize: 128
+  timeout: 30
+
+package:
+  include:
+    - node_modules/
+
+functions:
+  main:
+    handler: index.handler
+    events:
+      - alexaSkill: amzn1.ask.skill.37a8e543-3a3e-4cf3-9472-a030c49b3ec0
+        enabled: true
